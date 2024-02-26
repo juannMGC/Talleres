@@ -1,0 +1,170 @@
+/* Inicio */
+.main-nav {
+    margin-top: 5px;
+    list-style: none;
+    padding-left: 0;
+    background-color: blue;
+}
+
+.main-nav_item {
+    display: inline-block;
+}
+
+.main-nav_item a {
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.main-nav_item a:hover {
+    color: blue;
+}
+
+.main-nav_item a:active {
+    color:red;
+}
+
+.main-nav_item a::after {
+    content:" | ";
+    }
+
+/* Fuentes */
+p{
+    font-size: larger;
+    color:blue;
+    font-style: italic;
+}
+
+.dos{
+    font-size: larger;
+    color:black;
+    font-style: italic;
+}
+
+.tres {
+    color:red;
+    text-align: center;
+    font-size: large;
+    font-style: normal;
+}
+
+.cuatro {
+    color: peru;
+}
+
+
+/* Tabla */
+#main-container{
+	margin: 150px left;
+	width: 100%;
+}
+
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	padding: 10px;
+}
+
+thead{
+	background-color: #246355;
+	border-bottom: solid 5px #0F362D;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: #369681;
+	color: white;
+}
+
+/* Estilo base para la imagen */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Consulta de medios para ajustar el tamaño de la imagen en pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+    img {
+        max-width: 80%;
+    }
+}
+
+input[type="text"] {
+    width: 600px; /* Ancho del cuadro */
+    height: 20px; /* Alto del cuadro */
+    font-size: 20px; /* Tamaño de la fuente */
+    padding: 10px; /* Espacio adicional alrededor del texto */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+input[type="email"] {
+    width: 600px; /* Ancho del cuadro */
+    height: 20px; /* Alto del cuadro */
+    font-size: 20px; /* Tamaño de la fuente */
+    padding: 10px; /* Espacio adicional alrededor del texto */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+  }
+
+input[type="date"] {
+    width: 600px; /* Ancho del cuadro */
+    height: 20px; /* Alto del cuadro */
+    font-size: 20px; /* Tamaño de la fuente */
+    padding: 10px; /* Espacio adicional alrededor del texto */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+  }
+
+input[type="date"] {
+    width: 600px; /* Ancho del cuadro */
+    height: 20px; /* Alto del cuadro */
+    font-size: 20px; /* Tamaño de la fuente */
+    padding: 10px; /* Espacio adicional alrededor del texto */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+  }
+
+
+/* Estilo para el elemento select */
+select#principle {
+    width: 600px;
+    padding: 10px; 
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+}
+
+
+input[type="submit"] {
+    width: 1470px; /* Ancho del cuadro */
+    height: 40px; /* Alto del cuadro */
+    font-size: 20px; /* Tamaño de la fuente */
+    padding: 5px; /* Espacio adicional alrededor del texto */
+    background-color: rgb(55, 129, 209);
+    color:white;
+  }
+

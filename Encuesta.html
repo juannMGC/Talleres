@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./Untitled-2.css" />
+</head> 
+<body>
+    <header>
+        <nav>
+            <ul class="main-nav">
+                <li class="main-nav_item"><a href="Inicio.html">Inicio</a></li>
+                <li class="main-nav_item"><a href="WCAG.html">WCAG</a></li>
+                <li class="main-nav_item"><a href="Validadores.html">Validadores</a></li>
+                <li class="main-nav_item"><a href="Encuesta.html">Encuesta</a></li>
+            </ul>
+        </nav>
+
+        <h1>Desarrollo de Sitios Web Accesibles</h1>
+        <h2>Encuentas Sobre Accesibilidad</h2>
+        <form action="/submit_survey" method="post">
+            <label for="name">¿Cual es tu nombre completo? </label><br>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required><br><br>
+            
+            <label for="email">¿Cual es tu email?</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="awareness_date">¿En que fecha te enteraste de la accesibilidad web?</label><br>
+            <input type="date" id="awareness_date" name="awareness_date" required><br><br>
+            
+            <label for="importance">¿Consideras que es importante la accesibilidad?</label><br>
+            <input type="radio" id="importance_si" name="importance" value="Si" required>
+            <label for="importance_si">Sí</label><br>
+        
+            <input type="radio" id="importance_no" name="importance" value="No" required>
+            <label for="importance_no">No</label><br>
+        
+            <input type="radio" id="importance_poco" name="importance" value="Un poco" required>
+            <label for="importance_poco">Un poco</label><br><br>
+            
+            <label for="principle">¿Cual es el principio que te pareció más importante?</label><br>
+            <select id="principle" name="principle" required>
+                <option value="perceptible">Perceptible</option>
+                <option value="Operable">Operable</option>
+                <option value="Comprensible">Comprensible</option>
+                <option value="Robusto">Robusto</option>
+            </select><br><br>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </header>
+</body>
