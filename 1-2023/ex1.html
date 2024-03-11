@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionalidades Variadas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Convertir a Mayúsculas</h3>
+            <input type="text" id="inputText" maxlength="10" minlength="3" class="form-control mb-3">
+            <button onclick="convertirMayusculas()" class="btn btn-primary">Convertir a Mayúsculas</button>
+            <p id="resultado"></p>
+        </div>
+        <div class="col-md-6">
+            <h3>Calcular Edad</h3>
+            <input type="date" id="inputFecha" class="form-control mb-3">
+            <button onclick="calcularEdad()" class="btn btn-primary">Calcular Edad</button>
+            <p id="edad"></p>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <h3>Función 𝑓(𝑥)</h3>
+            <input type="number" id="inputX" class="form-control mb-3" placeholder="Ingrese el valor de x">
+            <button onclick="calcularResultado()" class="btn btn-primary">Calcular</button>
+            <div class="card mt-3">
+                <div class="card-body">
+                    Resultado: <span id="resultadoFuncion"></span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-6">
+            <h3>Generador de Matriz Aleatoria</h3>
+            <label for="inputFilas">Número de Filas:</label>
+            <input type="number" id="inputFilas" placeholder="Ingrese el número de filas" class="form-control"><br><br>
+    
+            <label for="inputColumnas">Número de Columnas:</label>
+            <input type="number" id="inputColumnas" placeholder="Ingrese el número de columnas" class="form-control"><br><br>
+    
+            <button onclick="generarMatriz()" style="padding: 5px 10px;" class="btn btn-primary">Generar Matriz</button>
+    
+            <div id="matriz"></div>
+            <div id="inversa"></div>
+            <div id="transpuesta"></div>
+        </div>
+    </div>
+
+</div>
+
+<script src="ex1.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
